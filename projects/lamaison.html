@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="La Maison Patisserie — Transforming a failing e-commerce experience into a functional, elegant storefront. Solo UX/UI design and front-end development." />
+  <title>La Maison Patisserie | Nuria Carbonell Rivela</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/case-study.css" />
+</head>
+<body>
+  <!-- Minimal Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="../index.html" class="header__logo" aria-label="Home">NCR</a>
+      <nav class="nav">
+        <ul class="nav__list" id="nav-list">
+          <li><a href="../index.html#work" class="nav__link">Work</a></li>
+          <li><a href="../index.html#about" class="nav__link">About</a></li>
+          <li><a href="../index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__menu-btn" aria-label="Toggle menu" id="menu-btn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="case-study">
+    <!-- Hero -->
+    <section class="case-study__hero">
+      <div class="case-study__hero-inner">
+        <img
+          src="https://placehold.co/1400x788/f2eddf/5c5c5c?text=La+Maison+Desktop+Mobile+Cart+Checkout"
+          alt="Hero composite: desktop homepage, mobile homepage, cart page, checkout form with validation on neutral background"
+          width="1400"
+          height="788"
+          class="case-study__hero-img"
+        />
+        <div class="case-study__hero-text">
+          <h1 class="case-study__title">La Maison Patisserie</h1>
+          <p class="case-study__tagline">Transforming a failing e-commerce experience into a functional, elegant storefront.</p>
+          <p class="case-study__hero-meta">Solo UX/UI Designer & Developer · 14 weeks · March–June 2025</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="case-study__section">
+      <div class="container container-narrow">
+        <h2 class="section-heading">Overview</h2>
+        <div class="case-study__overview-grid">
+          <div>
+            <p class="case-study__label">Role</p>
+            <p class="case-study__value">Solo UX/UI Designer & Front-End Developer</p>
+          </div>
+          <div>
+            <p class="case-study__label">Type</p>
+            <p class="case-study__value">Individual project</p>
+          </div>
+          <div>
+            <p class="case-study__label">Duration</p>
+            <p class="case-study__value">14 weeks (March – June 2025)</p>
+          </div>
+          <div>
+            <p class="case-study__label">Tools</p>
+            <p class="case-study__value">Figma, HTML, CSS, JavaScript</p>
+          </div>
+        </div>
+        <p class="case-study__body"><strong>Role:</strong> End-to-end redesign and development of a broken bakery e-commerce website. Conducted UX audit, rebuilt visual identity, designed responsive system, and developed fully functional front-end.</p>
+        <p class="case-study__body">La Maison Patisserie, a Melbourne French bakery, had a website actively preventing purchases.</p>
+        <p class="case-study__body"><strong>Key issues:</strong></p>
+        <ul class="case-study__list">
+          <li>"Buy Now" buttons leading to 404 errors</li>
+          <li>Illegible pink-on-beige text failing accessibility</li>
+          <li>No form validation</li>
+          <li>Inconsistent visual hierarchy</li>
+          <li>Poor product photography</li>
+        </ul>
+        <p class="case-study__body">This was not a cosmetic redesign. It required structural UX correction and full functional rebuild.</p>
+      </div>
+    </section>
+
+    <!-- Phase 1 — Audit & Research -->
+    <section class="case-study__section case-study__section--alt">
+      <div class="container container-narrow">
+        <h2 class="section-heading">Phase 1 — Audit & Research</h2>
+        <h3 class="case-study__subheading">Heuristic evaluation</h3>
+        <p class="case-study__body">Using Nielsen's 10 heuristics, I identified critical violations:</p>
+        <ul class="case-study__list">
+          <li>No visibility of system status (no cart confirmation)</li>
+          <li>No error prevention (forms accepted invalid data)</li>
+          <li>Inconsistent buttons and typography</li>
+          <li>Poor contrast in error messages</li>
+          <li>Redundant and cluttered layout</li>
+        </ul>
+        <div class="insight-box">
+          <p><strong>The core insight:</strong> Fundamental usability failures were blocking transactions.</p>
+        </div>
+        <div class="case-study__image-block">
+          <img src="https://placehold.co/800x450/e8e6e3/5c5c5c?text=Annotated+Original+Website" alt="Original homepage and cart with red markers: 404 error, illegible text, broken hierarchy, cluttered layout" width="800" height="450" loading="lazy" />
+        </div>
+        <h3 class="case-study__subheading">Competitive review (4 Melbourne bakeries)</h3>
+        <p class="case-study__body">I analyzed four local bakery websites to identify patterns of success and failure.</p>
+        <p class="case-study__body"><strong>Strong examples</strong> balanced: brand warmth, clear hierarchy, accessible contrast, professional imagery, functional checkout flows.</p>
+        <p class="case-study__body"><strong>Weak examples</strong> either prioritized aesthetics over usability, or function over brand personality.</p>
+        <div class="insight-box">
+          <p><strong>Insight:</strong> Successful bakery sites merge atmosphere with clarity. La Maison had neither consistently.</p>
+        </div>
+        <div class="case-study__image-block">
+          <img src="https://placehold.co/800x500/e8e6e3/5c5c5c?text=Competitive+Grid+4+Bakeries" alt="Four bakery homepage screenshots in grid with strengths and weaknesses under each" width="800" height="500" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Principles -->
+    <section class="case-study__section">
+      <div class="container container-narrow">
+        <h2 class="section-heading">Design Principles</h2>
+        <p class="case-study__body">From research, I established five guiding principles:</p>
+        <ul class="case-study__list">
+          <li><strong>Harmonious & Accessible</strong></li>
+          <li><strong>Clear Hierarchy</strong></li>
+          <li><strong>Functional First</strong></li>
+          <li><strong>Context-Aware Responsive</strong></li>
+          <li><strong>Prevent Errors</strong></li>
+        </ul>
+        <p class="case-study__body">These principles governed every decision.</p>
+      </div>
+    </section>
+
+    <!-- Visual System Redesign -->
+    <section class="case-study__section case-study__section--alt">
+      <div class="container container-narrow">
+        <h2 class="section-heading">Visual System Redesign</h2>
+        <h3 class="case-study__subheading">Problem</h3>
+        <ul class="case-study__list">
+          <li>Decorative Sail font was illegible</li>
+          <li>Pink (#FF6D84) on beige (#F5F2EB) failed contrast</li>
+          <li>Buttons lacked hierarchy</li>
+          <li>Colors felt disconnected</li>
+        </ul>
+        <h3 class="case-study__subheading">Solution</h3>
+        <p class="case-study__body"><strong>Typography:</strong> Reddit Mono (headings), Poppins (body).</p>
+        <p class="case-study__body"><strong>Color palette:</strong> Ochre (#CD934B), Burgundy (#8B0214), Soft Black (#0D0907), Warm Beige (#F2EDDF). Burgundy contrast: 8.48:1 (WCAG AAA).</p>
+        <p class="case-study__body"><strong>Design intent:</strong> French warmth without sacrificing readability.</p>
+        <div class="case-study__image-block">
+          <img src="https://placehold.co/800x400/e8e6e3/5c5c5c?text=Before+After+Header+Contrast" alt="Before: Sail font and pink text. After: Reddit Mono and burgundy with contrast ratio label" width="800" height="400" loading="lazy" />
+        </div>
+        <div class="case-study__image-block">
+          <img src="https://placehold.co/800x400/e8e6e3/5c5c5c?text=Color+%26+Typography+System" alt="Color swatches and type scale: H1 48px, H2 24px, H3 18px, Body 16px" width="800" height="400" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Button & Interaction System -->
+    <section class="case-study__section">
+      <div class="container container-narrow">
+        <h2 class="section-heading">Button & Interaction System</h2>
+        <p class="case-study__body"><strong>Original problem:</strong> No visual hierarchy between actions.</p>
+        <p class="case-study__body"><strong>Solution:</strong> Primary — solid ochre, white text, cart icon. Secondary — outline. Exit — burgundy. Design communicates priority immediately.</p>
+        <div class="case-study__image-block">
+          <img src="https://placehold.co/800x300/e8e6e3/5c5c5c?text=Button+System+Primary+Secondary+Exit" alt="Three buttons side-by-side with labels: Primary / Secondary / Exit" width="800" height="300" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Error Prevention & Form Validation -->
+    <section class="case-study__section case-study__section--alt">
+      <div class="container container-narrow">
+        <h2 class="section-heading">Error Prevention & Form Validation</h2>
+        <p class="case-study__body"><strong>Original issue:</strong> Forms accepted invalid card numbers and empty fields.</p>
+        <p class="case-study__body"><strong>Solution:</strong> Format placeholders, character limits, inline validation, clear error messaging, required indicators.</p>
+        <p class="case-study__body"><strong>Goal:</strong> Prevent errors before submission.</p>
+        <div class="case-study__image-block">
+          <img src="https://placehold.co/800x450/e8e6e3/5c5c5c?text=Form+States+Empty+Correct+Error+Success" alt="Checkout form in four states: Empty / Correct / Error / Success" width="800" height="450" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Responsive Redesign -->
+    <section class="case-study__section">
+      <div class="container container-narrow">
+        <h2 class="section-heading">Responsive Redesign</h2>
+        <p class="case-study__body">Mobile redesign was not just scaled-down desktop.</p>
+        <p class="case-study__body"><strong>Key changes:</strong> Horizontal nav → full-screen hamburger. Two-column cart → single column. Always-visible order summary → collapsible accordion. Hero overlay → full-bleed layout. Each breakpoint optimized for usage context.</p>
+        <div class="case-study__image-block">
+          <img src="https://placehold.co/800x450/e8e6e3/5c5c5c?text=Desktop+vs+Mobile+Hero+Nav+Cart" alt="Desktop vs mobile: hero transformation, navigation change, cart layout shift" width="800" height="450" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Communicating Constraints -->
+    <section class="case-study__section case-study__section--alt">
+      <div class="container container-narrow">
+        <h2 class="section-heading">Communicating Constraints</h2>
+        <p class="case-study__body">La Maison offers pickup only. Original site communicated this late.</p>
+        <p class="case-study__body"><strong>Solution:</strong> Prominent pickup warning in cart with: attention icon, location and time details, clickable date/time modification. Prevents late-stage abandonment.</p>
+        <div class="case-study__image-block">
+          <img src="https://placehold.co/800x400/e8e6e3/5c5c5c?text=Cart+Pickup+Warning+Box" alt="Cart page with pickup information box highlighted" width="800" height="400" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Development -->
+    <section class="case-study__section">
+      <div class="container container-narrow">
+        <h2 class="section-heading">Development</h2>
+        <p class="case-study__body">Built fully functional front-end using HTML5, CSS3, vanilla JavaScript.</p>
+        <p class="case-study__body"><strong>Structured codebase:</strong> /assets, /styles, /scripts.</p>
+        <p class="case-study__body"><strong>Implemented:</strong> Interactive cart with real-time totals; session persistence; validation logic; product modal overlay; responsive navigation.</p>
+        <div class="case-study__image-block">
+          <img src="https://placehold.co/800x400/e8e6e3/5c5c5c?text=Code+Structure+Overview" alt="Folder structure screenshot" width="800" height="400" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Before / After Impact -->
+    <section class="case-study__section case-study__section--alt">
+      <div class="container container-narrow">
+        <h2 class="section-heading">Before / After Impact</h2>
+        <p class="case-study__body">Delivered improvements in: visual clarity, functional reliability, accessibility compliance, error prevention, navigation logic.</p>
+        <p class="case-study__body">All buttons functional. All forms validated. Clear hierarchy across screens.</p>
+        <div class="case-study__image-block">
+          <img src="https://placehold.co/800x450/e8e6e3/5c5c5c?text=Before+After+Homepage" alt="Side-by-side before and after homepage comparison" width="800" height="450" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Reflection -->
+    <section class="case-study__section">
+      <div class="container container-narrow">
+        <h2 class="section-heading">Reflection</h2>
+        <ul class="case-study__takeaways">
+          <li>Fundamentals compound: spacing, hierarchy, contrast.</li>
+          <li>Clear communication reduces friction.</li>
+          <li>Design systems simplify development.</li>
+          <li>Responsive design adapts to behavior, not width.</li>
+          <li>Development tools accelerate work but require understanding.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- View Project -->
+    <section class="case-study__section case-study__section--alt">
+      <div class="container container-narrow">
+        <h2 class="section-heading">View Project</h2>
+        <p class="case-study__body">
+          <a href="https://nuria-16cr.github.io/patisserie-website/" target="_blank" rel="noopener noreferrer">Live website</a> ·
+          <a href="https://www.figma.com/proto/FIVGgti1VJ2ibeR31tUjtU/UI-Design-A2---Desktop" target="_blank" rel="noopener noreferrer">Desktop prototype</a> ·
+          <a href="https://www.figma.com/proto/YftiPE1bHHbdb94qz0flRC/UI-Design-A2---Mobile" target="_blank" rel="noopener noreferrer">Mobile prototype</a> ·
+          <a href="https://github.com/Nuria-16cr/patisserie-website" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Back to work -->
+    <section class="case-study__section case-study__nav">
+      <div class="container container-narrow">
+        <a href="../index.html#work" class="case-study__back">← Back to work</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-creative">
+    <div class="container">
+      <div class="footer-content-creative">
+        <p>&copy; <span id="year"></span> Nuria Carbonell Rivela</p>
+        <p>Built with HTML, CSS & JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
