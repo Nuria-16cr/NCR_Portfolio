@@ -494,6 +494,16 @@
   margin: 24px 0 16px;
 }
 
+.scripted-achievement-grid--single {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.scripted-achievement-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 0;
+}
+
 
 .scripted-usability-grid {
   display: grid;
@@ -578,6 +588,14 @@
 
   .scripted-achievement-grid {
     grid-template-columns: 1fr;
+  }
+
+  .scripted-achievement-grid--three {
+    grid-template-columns: 1fr;
+  }
+
+  .scripted-achievement-grid--single {
+    justify-items: stretch;
   }
 
   .scripted-usability-grid {
