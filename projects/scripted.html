@@ -31,182 +31,342 @@
 
   <main class="case-study">
     <!-- Hero -->
-    <section class="case-study__hero">
-      <div class="case-study__hero-inner">
-        <img
-          src="https://placehold.co/1400x788/e8e6e3/5c5c5c?text=Scripted+Home+Recording+Summary+Lesson"
-          alt="Scripted — home screen, recording interface, conversation summary, and lesson screen"
-          width="1400"
-          height="788"
-          class="case-study__hero-img"
-        />
-        <div class="case-study__hero-text">
-          <h1 class="case-study__title">Scripted</h1>
-          <p class="case-study__tagline">AI-Supported Conversation Practice for Intermediate Language Learners</p>
-          <p class="case-study__hero-meta">UX/UI Designer · Team of 4 · 10 Weeks · 2025</p>
-        </div>
+    <header class="case-study__hero">
+      <div class="case-study__content">
+        <p class="case-study__kicker">Scripted</p>
+        <h1>Turning real conversations into structured language learning</h1>
+        <p class="case-study__meta">UX/UI Designer · Team of 4 · 10 weeks · 2025</p>
       </div>
-    </section>
+
+      <div class="case-study__hero-media case-study__content">
+        <figure class="case-study__figure case-study__figure--hero case-study__image-block">
+          <img
+            src="../assets/Scripted%20hero.png"
+            alt="Scripted — home screen, recording interface, conversation summary, and lesson screen"
+            width="4564"
+            height="2370"
+            fetchpriority="high"
+            decoding="async"
+            class="case-study__hero-img"
+          />
+          <figcaption class="case-study__caption">Home, recording, transcript analysis, and lesson screens.</figcaption>
+        </figure>
+      </div>
+    </header>
 
     <!-- Overview -->
     <section class="case-study__section">
       <div class="container container-narrow">
         <h2 class="section-heading">Overview</h2>
-        <div class="case-study__overview-grid">
-          <div>
-            <p class="case-study__label">Role</p>
-            <p class="case-study__value">UX/UI Designer</p>
-          </div>
-          <div>
-            <p class="case-study__label">Team</p>
-            <p class="case-study__value">4 designers</p>
-          </div>
-          <div>
-            <p class="case-study__label">Duration</p>
-            <p class="case-study__value">10 weeks (2025)</p>
-          </div>
-          <div>
-            <p class="case-study__label">Tools</p>
-            <p class="case-study__value">Figma, User Testing, Prototyping</p>
-          </div>
-        </div>
+        <p class="case-study__body">Scripted is a mobile app designed to support intermediate language learners in developing conversational fluency through real-time practice and AI-driven feedback.</p>
+        <p class="case-study__body">The project explored how structured feedback could be integrated into conversational experiences without disrupting natural dialogue, addressing the gap between lesson-based apps and real-world communication.</p>
         <h3 class="case-study__subheading">My role</h3>
         <ul class="case-study__list">
-          <li>Led recording experience design and navigation architecture</li>
-          <li>Independently redesigned achievement system after usability testing</li>
+          <li>Led design of the recording experience and interaction flow (solo, group, AI)</li>
+          <li>Designed key interfaces including recording, summary-first feedback, and AI conversation screens</li>
+          <li>Redefined the achievement system based on usability testing (independent extension)</li>
+          <li>Contributed to navigation structure, user flows, and iterative decision-making within a collaborative team</li>
         </ul>
       </div>
     </section>
 
-    <!-- Project Domain -->
+    <!-- The Problem -->
     <section class="case-study__section case-study__section--alt">
       <div class="container container-narrow">
-        <h2 class="section-heading">Project Domain</h2>
-        <h3 class="case-study__subheading">Problem domain</h3>
-        <p class="case-study__body">Intermediate language learners often plateau. They understand grammar but struggle with real-time conversational fluency.</p>
-        <p class="case-study__body"><strong>Existing tools:</strong></p>
+        <h2 class="section-heading">The Problem</h2>
+        <p class="case-study__body">Intermediate language learners often plateau: they understand grammar and vocabulary but struggle to apply it in real conversations.</p>
+        <p class="case-study__body">Existing tools fall into two extremes:</p>
         <ul class="case-study__list">
-          <li><strong>Lesson apps</strong> — structured but not conversational</li>
-          <li><strong>Community apps</strong> — conversational but lack structured feedback</li>
-          <li><strong>Tutors</strong> — effective but expensive and scheduled</li>
+          <li>Lesson-based apps provide structure but lack real conversational practice</li>
+          <li>Community platforms enable conversation but offer little meaningful feedback</li>
         </ul>
-        <h3 class="case-study__subheading">Design challenge</h3>
-        <p class="case-study__body">How might we provide structured feedback on real conversations without disrupting conversational flow?</p>
-        <div class="case-study__image-block">
-          <img src="https://placehold.co/800x450/e8e6e3/5c5c5c?text=Competitive+Landscape+Structured+Feedback+vs+Conversation" alt="Competitive landscape: structured feedback vs conversational practice, Scripted positioned between accessibility and feedback" width="800" height="450" loading="lazy" />
-        </div>
+        <p class="case-study__body">As a result, learners lack both consistent practice opportunities and actionable insight into their spoken performance.</p>
       </div>
     </section>
 
-    <!-- Process Timeline -->
+    <!-- Product Strategy -->
     <section class="case-study__section">
       <div class="container container-narrow">
-        <h2 class="section-heading">Process Timeline</h2>
-        <h3 class="case-study__subheading">Phase 1 — Concept development (group)</h3>
+        <h2 class="section-heading">Product Strategy</h2>
+        <p class="case-study__body">“Scripted” is an app designed as an accessory to conversational practice for intermediate language learners.</p>
+        <p class="case-study__body">The strategy focused on:</p>
         <ul class="case-study__list">
-          <li>Developed 4 distinct concepts</li>
-          <li>Created mid-fidelity wireframes</li>
-          <li>Conducted concept validation with 12 participants</li>
-          <li>Recording concept ranked highest for usefulness</li>
+          <li>Supporting real conversations between learners (friends, family, partners)</li>
+          <li>Making practice more accessible through optional AI and solo modes</li>
+          <li>Providing structured, personalised feedback without disrupting flow</li>
+          <li>Creating a system that encourages continued engagement over time</li>
         </ul>
-        <div class="insight-box">
-          <p><strong>Key insight:</strong> Users valued feedback but lacked consistent practice partners.</p>
-        </div>
-        <div class="case-study__image-block">
-          <img src="https://placehold.co/800x350/e8e6e3/5c5c5c?text=4+Concept+Wireframes+%26+Ranking" alt="Four concept wireframe snapshots with concept ranking result" width="800" height="350" loading="lazy" />
-        </div>
-
-        <h3 class="case-study__subheading">Phase 2 — Hybrid solution (group)</h3>
-        <p class="case-study__body">We combined recording-based feedback with AI + solo conversation access. This removed dependency on external partners and expanded accessibility.</p>
-        <div class="case-study__image-block">
-          <img src="https://placehold.co/800x450/e8e6e3/5c5c5c?text=Hybrid+System+Flow+Conversation+to+Progress" alt="Hybrid system flow: Conversation (Real/AI/Solo) → AI Analysis → Summary → Personalized Lessons → Progress Tracking" width="800" height="450" loading="lazy" />
-        </div>
-
-        <h3 class="case-study__subheading">Phase 3 — High-fidelity prototype (group)</h3>
-        <p class="case-study__body">Built complete mobile prototype including: Home, Recording (3 modes), Transcript review, Personalized lessons, Progress tracking.</p>
-        <div class="case-study__image-block">
-          <img src="https://placehold.co/800x600/e8e6e3/5c5c5c?text=Full+UI+Gallery+Sequential+Screens" alt="Full UI gallery — sequential screens with clear spacing" width="800" height="600" loading="lazy" />
-        </div>
       </div>
     </section>
 
-    <!-- My Core Contribution -->
-    <section class="case-study__section case-study__section--alt">
-      <div class="container container-narrow">
-        <h2 class="section-heading">My Core Contribution</h2>
-        <h3 class="case-study__subheading">Recording experience design</h3>
-        <p class="case-study__body">I led the design of the recording interaction and navigation system.</p>
-        <p class="case-study__body"><strong>Design goals:</strong></p>
-        <ul class="case-study__list">
-          <li>Minimize cognitive load during live conversation</li>
-          <li>Avoid screen dependency</li>
-          <li>Provide optional support without interruption</li>
-        </ul>
-        <p class="case-study__body"><strong>Design decisions:</strong></p>
-        <p class="case-study__body"><strong>Before:</strong> Clear entry — Solo | Group | AI.</p>
-        <p class="case-study__body"><strong>During:</strong> Minimal UI (waveform, timer); optional live transcript; subtle word support popup.</p>
-        <p class="case-study__body"><strong>After:</strong> Automatic summary-first feedback.</p>
-        <div class="case-study__image-block">
-          <img src="https://placehold.co/800x500/e8e6e3/5c5c5c?text=Recording+Interface+Annotated" alt="Recording interface annotated: waveform, live transcript, popup suggestion, controls" width="800" height="500" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Usability Testing -->
+    <!-- Concept Evolution -->
     <section class="case-study__section">
       <div class="container container-narrow">
-        <h2 class="section-heading">Usability Testing</h2>
-        <p class="case-study__body">Tested with 8 intermediate language learners. <strong>Method:</strong> Think-aloud protocol, 4 structured tasks, pre & post questionnaires.</p>
-        <h3 class="case-study__subheading">Key findings</h3>
-        <ul class="case-study__list">
-          <li>Progress visualization motivates users</li>
-          <li>Support must be unobtrusive</li>
-          <li>Transcript review is overwhelming</li>
-          <li>Visual design lacks personality</li>
-        </ul>
-        <p class="case-study__body"><strong>Ease of use:</strong> 4.1/5. <strong>100%</strong> task completion for recording flow.</p>
-        <div class="case-study__image-block">
-          <img src="https://placehold.co/800x400/e8e6e3/5c5c5c?text=Findings+Table+%26+User+Quotes+%26+Metrics" alt="Findings table with user quotes and metric visual" width="800" height="400" loading="lazy" />
+        <h2 class="section-heading">Concept Evolution</h2>
+        <p class="case-study__body">We explored four distinct directions to address conversational fluency, each targeting a different aspect of language learning.</p>
+        <div class="scripted-concept-grid">
+          <div class="case-study__image-block">
+            <p class="case-study__caption scripted-concept-label">Recording</p>
+            <img src="../assets/recordingapp.png" alt="Recording app concept screen" width="646" height="1400" loading="lazy" />
+          </div>
+          <div class="case-study__image-block">
+            <p class="case-study__caption scripted-concept-label">Media</p>
+            <img src="../assets/mediaapp.png" alt="Media immersion concept screen" width="646" height="1400" loading="lazy" />
+          </div>
+          <div class="case-study__image-block">
+            <p class="case-study__caption scripted-concept-label">Vocabulary</p>
+            <img src="../assets/dictionaryapp.png" alt="Vocabulary trainer concept screen" width="646" height="1400" loading="lazy" />
+          </div>
+          <div class="case-study__image-block">
+            <p class="case-study__caption scripted-concept-label">Community</p>
+            <img src="../assets/forumapp.png" alt="Community platform concept screen" width="646" height="1400" loading="lazy" />
+          </div>
         </div>
+        <ul class="case-study__list">
+          <li>Recording app — capturing real conversations and generating transcripts</li>
+          <li>Media immersion — learning through curated content such as films, music, and short-form media</li>
+          <li>Vocabulary trainer — focusing on saving and revisiting difficult words for targeted practice</li>
+          <li>Community platform — enabling social interaction through messaging and daily shared content</li>
+        </ul>
+        <h3 class="case-study__subheading">Key Insight</h3>
+        <p class="case-study__body">Initial testing revealed that while all concepts addressed aspects of learning, none fully supported real conversational fluency.</p>
+        <p class="case-study__body">The recording concept was the strongest, but limited by reliance on conversation partners.</p>
+        <h3 class="case-study__subheading">Final Direction</h3>
+        <p class="case-study__body">We evolved the solution by combining:</p>
+        <ul class="case-study__list">
+          <li>recording-based feedback</li>
+          <li>AI-supported conversations</li>
+          <li>solo practice</li>
+        </ul>
+        <p class="case-study__body">This expanded accessibility while maintaining focus on real conversational interaction.</p>
       </div>
     </section>
 
-    <!-- Iteration -->
+    <!-- Core Experience -->
     <section class="case-study__section case-study__section--alt">
       <div class="container container-narrow">
-        <h2 class="section-heading">Iteration</h2>
-        <p class="case-study__body"><strong>Problem:</strong> Transcript review caused cognitive overload.</p>
-        <p class="case-study__body"><strong>Iteration:</strong> Summary-first design; categorized mistake types; weakness pattern tracking; full transcript secondary.</p>
-        <p class="case-study__body"><strong>Result:</strong> Improved clarity and scannability.</p>
-        <div class="case-study__image-block">
-          <img src="https://placehold.co/800x450/e8e6e3/5c5c5c?text=Before+Dense+Transcript+vs+After+Summary+View" alt="Before: dense transcript. After: organized summary view" width="800" height="450" loading="lazy" />
+        <h2 class="section-heading">Core Experience</h2>
+        <h3 class="case-study__subheading">Core Experience — Recording a Conversation</h3>
+        <p class="case-study__body">Scripted is built around real-world conversation practice. The core experience was designed to support users during live interaction without interrupting conversational flow.</p>
+        <p class="case-study__body">The challenge was balancing:</p>
+        <ul class="case-study__list">
+          <li>providing timely support</li>
+          <li>without increasing cognitive load or screen dependency</li>
+        </ul>
+        <h3 class="case-study__subheading">Flow</h3>
+        <p class="case-study__body"><strong>Start</strong><br />Users either:</p>
+        <ul class="case-study__list">
+          <li>record a real conversation</li>
+          <li>or practice with an AI chatbot</li>
+        </ul>
+        <p class="case-study__body">During recording, the system automatically detects speakers (solo, pair, or group) and assigns visual indicators in the transcript.</p>
+        <p class="case-study__body">Colour differentiation between speakers was used as a primary visual cue; future iterations would further improve accessibility by strengthening contrast and adding non-colour indicators.</p>
+        <p class="case-study__body"><strong>Record</strong><br />The interface is intentionally minimal:</p>
+        <ul class="case-study__list">
+          <li>waveform</li>
+          <li>timer</li>
+          <li>primary controls</li>
+        </ul>
+        <p class="case-study__body">Users are not required to interact with the screen, allowing full focus on conversation.</p>
+        <p class="case-study__body"><strong>Contextual Support (Triggered)</strong></p>
+        <p class="case-study__body">Support appears only when explicitly prompted:</p>
+        <p class="case-study__body">“How do you say…?”</p>
+        <p class="case-study__body">This triggers a lightweight suggestion overlay that:</p>
+        <ul class="case-study__list">
+          <li>provides vocabulary support</li>
+          <li>does not interrupt the flow of conversation</li>
+          <li>avoids persistent UI clutter</li>
+        </ul>
+        <p class="case-study__body">This interaction was refined through testing to reduce intrusiveness.</p>
+        <p class="case-study__body"><strong>Summary-first Feedback</strong><br />After recording, users land on a structured summary:</p>
+        <ul class="case-study__list">
+          <li>conversation context</li>
+          <li>key metadata (duration, participants)</li>
+          <li>quick indicators (e.g. weaknesses, vocabulary)</li>
+        </ul>
+        <p class="case-study__body">Users can then choose to explore detailed transcript analysis.</p>
+        <p class="case-study__body">During testing, users expected the weaknesses and glossary words to be clickable. This revealed an opportunity to evolve the feature into an interactive summary in future iterations.</p>
+        <div class="scripted-mobile-grid">
+          <div class="case-study__image-block scripted-mobile-card">
+            <img src="../assets/homerecording.png" alt="Home recording screen" width="786" height="1704" loading="lazy" />
+            <p class="case-study__caption">Home</p>
+          </div>
+          <div class="case-study__image-block scripted-mobile-card">
+            <img src="../assets/conversation.png" alt="Recording conversation screen" width="786" height="1704" loading="lazy" />
+            <p class="case-study__caption">Recording</p>
+          </div>
+          <div class="case-study__image-block scripted-mobile-card">
+            <img src="../assets/howdoyousayafter.png" alt="'How do you say...?' support screen" width="786" height="1704" loading="lazy" />
+            <p class="case-study__caption">How do you say...?</p>
+          </div>
+          <div class="case-study__image-block scripted-mobile-card">
+            <img src="../assets/Summary.png" alt="Summary screen" width="786" height="1704" loading="lazy" />
+            <p class="case-study__caption">Summary</p>
+          </div>
         </div>
+        <div class="scripted-before-after-grid">
+          <div class="case-study__image-block scripted-mobile-card">
+            <img src="../assets/howdoyousaybefore.png" alt="How do you say before iteration" width="786" height="1704" loading="lazy" />
+            <p class="case-study__caption">Before</p>
+          </div>
+          <div class="case-study__image-block scripted-mobile-card">
+            <img src="../assets/howdoyousayafter.png" alt="How do you say after iteration" width="786" height="1704" loading="lazy" />
+            <p class="case-study__caption">After</p>
+          </div>
+        </div>
+        <p class="case-study__body">Earlier versions displayed the prompt centrally; this was repositioned to a less intrusive area following usability feedback.</p>
+        <h3 class="case-study__subheading">Key Design Decisions</h3>
+        <ul class="case-study__list">
+          <li>Designed for hands-free interaction during live conversation</li>
+          <li>Made support user-triggered, not system-imposed</li>
+          <li>Shifted from intrusive overlays to subtle contextual prompts</li>
+          <li>Prioritized summary-first feedback over full transcript exposure</li>
+        </ul>
+        <h3 class="case-study__subheading">Outcome</h3>
+        <p class="case-study__body">The recording flow achieved 100% task completion in usability testing, indicating strong alignment with user expectations and mental models.</p>
+        <p class="case-study__body">More importantly, it enabled users to maintain conversational flow while still receiving structured feedback.</p>
+      </div>
+    </section>
+
+    <!-- Usability Testing and Iteration -->
+    <section class="case-study__section">
+      <div class="container container-narrow">
+        <h2 class="section-heading">Usability Testing & Iteration</h2>
+        <p class="case-study__body">We conducted usability testing on the high-fidelity prototype to evaluate how well the experience supported real conversational practice and post-conversation feedback.</p>
+        <p class="case-study__body case-study__body--tight"><strong>Participants:</strong> 8 intermediate language learners</p>
+        <p class="case-study__body case-study__body--tight"><strong>Method:</strong> Think-aloud protocol, task-based testing</p>
+        <p class="case-study__body case-study__body--tight"><strong>Tasks:</strong> Record a conversation, review feedback, complete a lesson</p>
+        <h3 class="case-study__subheading">Key Findings</h3>
+        <ol class="case-study__findings">
+          <li class="case-study__finding">
+            <h4 class="case-study__finding-title">Feedback felt overwhelming</h4>
+            <p class="case-study__body">Users found transcript review dense and difficult to engage with.</p>
+            <p class="case-study__body">“I would just scroll down, look at a couple of the mistakes, and exit out.”</p>
+          </li>
+          <li class="case-study__finding">
+            <h4 class="case-study__finding-title">Progress and achievement are essential</h4>
+            <p class="case-study__body">Users were motivated by visible progress, but the experience lacked positive reinforcement.</p>
+            <p class="case-study__body">“I like the weakness levels and being able to see [the bar] go from red to yellow to green as I practice.”</p>
+          </li>
+          <li class="case-study__finding">
+            <h4 class="case-study__finding-title">Onboarding is needed</h4>
+            <p class="case-study__body">Some icons and features were unclear without guidance.</p>
+            <p class="case-study__body">“In the onboarding you could explain what the different features and icons are.”</p>
+          </li>
+        </ol>
+        <div class="scripted-usability-grid">
+          <div class="case-study__image-block scripted-mobile-card">
+            <p class="case-study__caption case-study__caption--top">Home screen</p>
+            <img src="../assets/Recording%20Tab.png" alt="Home screen recording tab" width="1572" height="3408" loading="lazy" />
+          </div>
+          <div class="case-study__image-block scripted-mobile-card">
+            <p class="case-study__caption case-study__caption--top">Group conversation</p>
+            <img src="../assets/Group%20Recording%20%E2%80%93%20come%20si%20dice.png" alt="Group conversation recording screen" width="1572" height="3408" loading="lazy" />
+          </div>
+          <div class="case-study__image-block scripted-mobile-card">
+            <p class="case-study__caption case-study__caption--top">Conversation summary</p>
+            <img src="../assets/Group%20Conversation%20Summary.png" alt="Group conversation summary screen" width="1572" height="3408" loading="lazy" />
+          </div>
+          <div class="case-study__image-block scripted-mobile-card">
+            <p class="case-study__caption case-study__caption--top">Trasncript analysys</p>
+            <img src="../assets/Transcript%20Analysis.png" alt="Transcript analysis screen" width="1572" height="3408" loading="lazy" />
+          </div>
+          <div class="case-study__image-block scripted-mobile-card">
+            <p class="case-study__caption case-study__caption--top">Review tab</p>
+            <img src="../assets/Review%20Tab%20%E2%80%93%C2%A0Weaknesses.png" alt="Review tab weaknesses screen" width="1572" height="3408" loading="lazy" />
+          </div>
+          <div class="case-study__image-block scripted-mobile-card">
+            <p class="case-study__caption case-study__caption--top">Weakness Details</p>
+            <img src="../assets/Weakness%20Details.png" alt="Weakness details screen" width="1572" height="3408" loading="lazy" />
+          </div>
+          <div class="case-study__image-block scripted-mobile-card">
+            <p class="case-study__caption case-study__caption--top">Complete a lesson</p>
+            <img src="../assets/Exercise%202%20%E2%80%93%20correct.png" alt="Complete a lesson screen" width="1572" height="3408" loading="lazy" />
+          </div>
+        </div>
+        <h3 class="case-study__subheading">Testing Conclusion</h3>
+        <h3 class="case-study__subheading case-study__subheading--minor">Key considerations</h3>
+        <ul class="case-study__list case-study__list--tight">
+          <li><strong>AI reliance:</strong> requires strong guardrails to ensure accuracy and trust</li>
+          <li><strong>Privacy & transparency:</strong> are critical due to recorded conversation data</li>
+          <li><strong>Engagement:</strong> is lacking — the experience needs stronger reward and motivation systems</li>
+        </ul>
+        <h3 class="case-study__subheading case-study__subheading--minor">What worked well</h3>
+        <ul class="case-study__list case-study__list--tight">
+          <li><strong>Strong concept:</strong> addressing a clear gap in intermediate language learning</li>
+          <li><strong>Personalised value:</strong> through lessons based on real conversations</li>
+          <li><strong>Balanced, seamless user flows:</strong> that support conversation without disruption</li>
+        </ul>
+        <h3 class="case-study__subheading">Opportunity</h3>
+        <p class="case-study__body">The product is functional and intuitive, but lacks a sense of reward and progression, limiting long-term engagement.</p>
+        <p class="case-study__body">This insight led me to explore how the product could better support motivation and long-term engagement.</p>
       </div>
     </section>
 
     <!-- My Independent Extension -->
     <section class="case-study__section">
       <div class="container container-narrow">
-        <h2 class="section-heading">My Independent Extension</h2>
-        <h3 class="case-study__subheading">Achievement system redesign</h3>
-        <p class="case-study__body">After final testing, I independently analyzed engagement gaps and redesigned the motivational layer.</p>
-        <p class="case-study__body"><strong>Problem:</strong> Users did not feel rewarded when reviewing transcripts.</p>
-        <p class="case-study__body"><strong>Solution:</strong> Shift from error-based feedback to progress-based reinforcement.</p>
-        <p class="case-study__body"><strong>Features:</strong> Achievement cards; conversation milestones; goal setting; progress framing. This redesign focused on emotional reinforcement and habit formation.</p>
-        <div class="case-study__image-block">
-          <img src="https://placehold.co/800x500/e8e6e3/5c5c5c?text=Achievement+Screens+Goal+Card+Milestone+Progress" alt="Achievement screens: goal setting, achievement card, milestone notification, progress update" width="800" height="500" loading="lazy" />
+        <h2 class="section-heading">Enhancing Engagement Through Achievement Design</h2>
+        <p class="case-study__body">To address the lack of motivation identified in testing, I redesigned the feedback system to focus on progress, reinforcement, and habit formation.</p>
+        <h3 class="case-study__subheading">Solution — Achievement System</h3>
+        <p class="case-study__body">I redesigned the feedback layer to introduce a system of:</p>
+        <ul class="case-study__list">
+          <li>achievement cards</li>
+          <li>milestones</li>
+          <li>goal-based progress tracking</li>
+        </ul>
+        <h3 class="case-study__subheading">Key Features</h3>
+        <p class="case-study__body"><strong>1. Achievement Cards</strong></p>
+        <p class="case-study__body">Highlight small wins after each conversation</p>
+        <p class="case-study__body">Example: “You spoke for 20 minutes — your longest conversation yet”</p>
+        <p class="case-study__body">Reinforces progress rather than mistakes</p>
+        <p class="case-study__body"><strong>2. Goal Setting</strong></p>
+        <p class="case-study__body">Users define goals before conversations</p>
+        <p class="case-study__body">Progress is visible and trackable</p>
+        <p class="case-study__body">Encourages intentional practice</p>
+        <p class="case-study__body"><strong>3. Milestones</strong></p>
+        <p class="case-study__body">Tracks consistency and long-term progress</p>
+        <p class="case-study__body">Example: “5 conversations completed this week”</p>
+        <p class="case-study__body">Builds habit formation</p>
+        <p class="case-study__body"><strong>4. Progress Framing</strong></p>
+        <p class="case-study__body">Shifts feedback tone from corrective → encouraging</p>
+        <p class="case-study__body">Makes improvement visible over time</p>
+        <h3 class="case-study__subheading">Design Rationale</h3>
+        <p class="case-study__body">This approach applies principles of behavioural design:</p>
+        <ul class="case-study__list">
+          <li>positive reinforcement increases repeat behaviour</li>
+          <li>visible progress supports motivation</li>
+          <li>small wins reduce perceived effort over time</li>
+        </ul>
+        <p class="case-study__body">The system reframes language learning as continuous progress, not error correction.</p>
+        <h3 class="case-study__subheading">Outcome (Conceptual)</h3>
+        <p class="case-study__body">While not implemented in the final prototype, this extension demonstrates how the product could evolve to support long-term engagement.</p>
+        <p class="case-study__body">It directly responds to usability findings and introduces a scalable motivational layer across the product.</p>
+        <div class="scripted-achievement-grid">
+          <div class="case-study__image-block scripted-mobile-card">
+            <img src="../assets/10Coversations.png" alt="10 conversations milestone screen" width="1572" height="3408" loading="lazy" />
+            <p class="case-study__caption">10 conversations</p>
+          </div>
+          <div class="case-study__image-block scripted-mobile-card">
+            <img src="../assets/goalsetting.png" alt="Goal setting screen" width="1572" height="3408" loading="lazy" />
+            <p class="case-study__caption">Goal setting</p>
+          </div>
+          <div class="case-study__image-block scripted-mobile-card">
+            <img src="../assets/homescreengoal.png" alt="Home screen with goal overview" width="786" height="1704" loading="lazy" />
+            <p class="case-study__caption">Home screen goal</p>
+          </div>
+          <div class="case-study__image-block scripted-mobile-card">
+            <img src="../assets/Conversationswithgoal.png" alt="Conversation with goal tracking screen" width="1572" height="3408" loading="lazy" />
+            <p class="case-study__caption">Conversation with goal</p>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Experience Journey -->
-    <section class="case-study__section case-study__section--alt">
-      <div class="container container-narrow">
-        <h2 class="section-heading">Experience Journey</h2>
-        <p class="case-study__body">Complete user flow: Start Conversation → Record → AI Analysis → Summary → Lesson → Progress.</p>
-        <div class="case-study__image-block">
-          <img src="https://placehold.co/800x350/e8e6e3/5c5c5c?text=Journey+Map+Start+to+Progress" alt="Horizontal journey map with icons and short descriptions" width="800" height="350" loading="lazy" />
-        </div>
+        <p class="case-study__body">The achievement system was designed as a continuous loop across key moments in the product:</p>
+        <ul class="case-study__list">
+          <li>After conversation → reward</li>
+          <li>Before next session → goal setting</li>
+          <li>During use → reinforcement</li>
+          <li>Over time → progress tracking</li>
+        </ul>
       </div>
     </section>
 
