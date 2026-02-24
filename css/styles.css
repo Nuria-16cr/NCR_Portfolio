@@ -229,6 +229,7 @@ a {
   justify-content: center;
   padding: calc(var(--spacing-3xl) + 72px) var(--spacing-lg) var(--spacing-3xl);
   position: relative;
+  background: #fff;
 }
 
 .hero__content {
@@ -310,6 +311,7 @@ a {
 .statement-bold {
   padding: var(--spacing-2xl) 0;
   border-top: 1px solid var(--border);
+  background: #fff;
 }
 
 .statement-bold__text {
@@ -334,6 +336,7 @@ a {
 .work-section {
   padding: var(--spacing-3xl) 0;
   border-top: 1px solid var(--border);
+  background: #fff;
 }
 
 .work-section .section-heading {
@@ -441,7 +444,7 @@ a {
 .about-section {
   padding: var(--spacing-3xl) 0;
   border-top: 1px solid var(--border);
-  background: var(--surface);
+  background: #fff;
 }
 
 .about-section .section-heading {
@@ -473,6 +476,7 @@ a {
 .stack-section {
   padding: var(--spacing-2xl) 0;
   border-top: 1px solid var(--border);
+  background: #fff;
 }
 
 .stack-section .section-heading {
@@ -504,7 +508,7 @@ a {
 .experience-section {
   padding: var(--spacing-3xl) 0;
   border-top: 1px solid var(--border);
-  background: var(--surface);
+  background: #fff;
 }
 
 .experience-section .section-heading {
@@ -569,6 +573,7 @@ a {
 .contact-section {
   padding: var(--spacing-2xl) 0;
   border-top: 1px solid var(--border);
+  background: #fff;
 }
 
 .contact-section .section-heading {
@@ -611,7 +616,7 @@ a {
    ============================================ */
 .footer-creative {
   padding: var(--spacing-lg) 0;
-  background: var(--surface);
+  background: #fff;
   border-top: 1px solid var(--border);
   font-size: var(--font-size-xs);
   color: var(--text-muted);
