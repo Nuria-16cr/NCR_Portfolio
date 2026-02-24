@@ -1,302 +1,648 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="La Maison Patisserie — UX audit and full-site redesign for an independent bakery. Usability, accessibility, and responsive UI system." />
-  <title>La Maison Patisserie | Nuria Carbonell Rivela</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="stylesheet" href="../css/case-study.css" />
-</head>
-<body>
-  <header class="header" id="header">
-    <div class="header__inner">
-      <a href="../index.html" class="header__logo" aria-label="Home">NCR</a>
-      <nav class="nav">
-        <ul class="nav__list" id="nav-list">
-          <li><a href="../index.html#work" class="nav__link">Work</a></li>
-          <li><a href="../index.html#about" class="nav__link">About</a></li>
-          <li><a href="../index.html#contact" class="nav__link">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="header__menu-btn" aria-label="Toggle menu" id="menu-btn">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <main class="case-study" id="main-content">
-    <!-- Hero -->
-    <header class="case-study__hero">
-      <div class="case-study__content">
-        <p class="case-study__kicker">La Maison Patisserie</p>
-        <h1>Transforming a fragmented e-commerce experience into a cohesive storefront.</h1>
-        <p class="case-study__meta">Solo UX/UI Designer & Developer · 14 weeks · March–June 2025</p>
-      </div>
-
-      <div class="case-study__hero-media case-study__content">
-        <figure class="case-study__figure case-study__figure--hero case-study__image-block">
-          <img
-            src="../assets/responsive/lamaison/beforeafterhomepage-1200.png"
-            srcset="../assets/responsive/lamaison/beforeafterhomepage-640.png 499w, ../assets/responsive/lamaison/beforeafterhomepage-1200.png 936w, ../assets/responsive/lamaison/beforeafterhomepage-1800.png 1404w"
-            sizes="(max-width: 960px) calc(100vw - 80px), 900px"
-            alt="La Maison Patisserie — homepage before (left) vs redesigned (right)"
-            width="936"
-            height="1200"
-            fetchpriority="high"
-            decoding="async"
-            class="case-study__hero-img"
-          />
-          <figcaption class="case-study__caption">Homepage before (left) vs redesigned (right).</figcaption>
-        </figure>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="La Maison Patisserie — UX audit and full-site redesign for an independent bakery. Usability, accessibility, and responsive UI system."
+    />
+    <title>La Maison Patisserie | Nuria Carbonell Rivela</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/case-study.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__inner">
+        <a href="../index.html" class="header__logo" aria-label="Home">NCR</a>
+        <nav class="nav">
+          <ul class="nav__list" id="nav-list">
+            <li><a href="../index.html#work" class="nav__link">Work</a></li>
+            <li><a href="../index.html#about" class="nav__link">About</a></li>
+            <li>
+              <a href="../index.html#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__menu-btn" aria-label="Toggle menu" id="menu-btn">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
 
-    <!-- Overview -->
-    <section class="case-study__section" id="overview" aria-labelledby="heading-overview">
-      <div class="case-study__content">
-        <h2 class="section-heading" id="heading-overview">Overview</h2>
-        <p class="case-study__metrics">
-          <strong>Scope:</strong> Full responsive e-commerce redesign (14+ screens across mobile & desktop)<br />
-          <strong>Deliverables:</strong> UX audit, wireframes, UI system, HTML/CSS prototype
-        </p>
-        <p class="case-study__body">
-          La Maison Patisserie is an independent bakery with an existing online store. This project involved auditing the current website and redesigning the full digital experience to improve clarity, accessibility, and structural consistency.
-        </p>
-        <p class="case-study__body">
-          The redesign translated audit findings into a cohesive design system and scalable front-end implementation across mobile and desktop experiences.
-        </p>
-        <dl class="case-study__meta-list">
-          <dt>Role</dt>
-          <dd>UX/UI Designer</dd>
-          <dt>Tools</dt>
-          <dd>Figma, HTML/CSS</dd>
-        </dl>
-        <h3 class="case-study__subheading">Impact Focus</h3>
-        <p class="case-study__body">While no formal usability testing was conducted, the redesign prioritised clarity, accessibility, and system consistency to reduce friction in product discovery and checkout progression.</p>
-      </div>
-    </section>
-
-    <!-- The Problem -->
-    <section class="case-study__section case-study__section--alt" id="problem" aria-labelledby="heading-problem">
-      <div class="case-study__content">
-        <h2 class="section-heading" id="heading-problem">The Problem</h2>
-        <p class="case-study__body">The original website suffered from systemic usability issues that affected both readability and purchasing flow.</p>
-        <p class="case-study__body"><strong>Key issues identified:</strong></p>
-        <ul class="case-study__list">
-          <li>Low-contrast colour combinations reducing readability</li>
-          <li>Inconsistent typography hierarchy</li>
-          <li>Navigation structure lacking clarity</li>
-          <li>Functional friction within cart and checkout flow</li>
-          <li>Inconsistent responsive behaviour across breakpoints</li>
-        </ul>
-        <p class="case-study__body">These issues created cognitive load and reduced confidence during product discovery and purchase.</p>
-      </div>
-    </section>
-
-    <!-- Audit Findings -->
-    <section class="case-study__section" id="audit" aria-labelledby="heading-audit">
-      <div class="case-study__content">
-        <h2 class="section-heading" id="heading-audit">Audit Findings</h2>
-        <p class="case-study__body">A structured UX and accessibility audit was conducted across mobile and desktop experiences.</p>
-        <p class="case-study__body"><strong>Evaluation areas included:</strong></p>
-        <ul class="case-study__list">
-          <li>Visual hierarchy and content prioritisation</li>
-          <li>Colour contrast alignment with WCAG standards</li>
-          <li>Navigation logic and information grouping</li>
-          <li>Interaction flow from product selection to checkout</li>
-          <li>Layout consistency across breakpoints</li>
-        </ul>
-        <div class="insight-box">
-          <p><strong>Primary insight:</strong>The absence of a unified design system created cascading inconsistencies in hierarchy, interaction, and accessibility.</p>
+    <main class="case-study" id="main-content">
+      <!-- Hero -->
+      <header class="case-study__hero">
+        <div class="case-study__content">
+          <p class="case-study__kicker">La Maison Patisserie</p>
+          <h1>
+            Transforming a fragmented e-commerce experience into a cohesive
+            storefront.
+          </h1>
+          <p class="case-study__meta">
+            Solo UX/UI Designer & Developer · 14 weeks · March–June 2025
+          </p>
         </div>
-      </div>
-    </section>
 
-    <!-- Design Goals -->
-    <section class="case-study__section case-study__section--alt" id="design-goals" aria-labelledby="heading-goals">
-      <div class="case-study__content">
-        <h2 class="section-heading" id="heading-goals">Design Goals</h2>
-        <p class="case-study__body">Based on the audit, the redesign focused on system-level improvements rather than surface-level styling.</p>
-        <p class="case-study__body"><strong>Core goals:</strong></p>
-        <ul class="case-study__list">
-          <li>Establish a structured typographic and spacing system</li>
-          <li>Improve colour contrast and accessibility compliance</li>
-          <li>Simplify navigation architecture and product discovery</li>
-          <li>Reduce cognitive load in cart and checkout flow</li>
-          <li>Implement a consistent mobile-first responsive framework</li>
-        </ul>
-        <div class="case-study__image-group case-study__image-group--supporting case-study__image-group--wireframe-full">
-          <figure class="case-study__figure case-study__figure--secondary case-study__image-block case-study__figure--wireframe">
-            <img src="../assets/responsive/lamaison/Wireframes-1200.png" srcset="../assets/responsive/lamaison/Wireframes-640.png 640w, ../assets/responsive/lamaison/Wireframes-1200.png 1200w, ../assets/responsive/lamaison/Wireframes-1800.png 1800w" sizes="(max-width: 960px) calc(100vw - 80px), 900px" alt="Wireframe overview of homepage structure" width="1200" height="452" loading="lazy" decoding="async" />
-            <figcaption class="case-study__caption">Low-fidelity wireframes used to define layout structure</figcaption>
+        <div class="case-study__hero-media case-study__content">
+          <figure
+            class="case-study__figure case-study__figure--hero case-study__image-block"
+          >
+            <img
+              src="../assets/responsive/lamaison/beforeafterhomepage-1200.png"
+              srcset="
+                ../assets/responsive/lamaison/beforeafterhomepage-640.png   499w,
+                ../assets/responsive/lamaison/beforeafterhomepage-1200.png  936w,
+                ../assets/responsive/lamaison/beforeafterhomepage-1800.png 1404w
+              "
+              sizes="(max-width: 960px) calc(100vw - 80px), 900px"
+              alt="La Maison Patisserie — homepage before (left) vs redesigned (right)"
+              width="936"
+              height="1200"
+              fetchpriority="high"
+              decoding="async"
+              class="case-study__hero-img"
+            />
+            <figcaption class="case-study__caption">
+              Homepage before (left) vs redesigned (right).
+            </figcaption>
           </figure>
         </div>
-      </div>
-    </section>
+      </header>
 
-    <!-- Structural Redesign -->
-    <section class="case-study__section" id="structural-redesign" aria-labelledby="heading-structural">
-      <div class="case-study__content">
-        <h2 class="section-heading" id="heading-structural">Structural Redesign</h2>
-        <p class="case-study__body">The original site lacked hierarchy and clear product discovery.</p>
-        <p class="case-study__body"><strong>Key structural changes:</strong></p>
-        <ul class="case-study__list">
-          <li>Reorganised homepage to prioritise product categories</li>
-          <li>Simplified navigation architecture</li>
-          <li>Reduced visual competition between banners and products</li>
-          <li>Introduced consistent grid structure across pages</li>
-          <li>Standardised content modules to improve predictability across screens</li>
-        </ul>
-        <div class="case-study__image-group case-study__image-group--primary">
-          <figure class="case-study__figure case-study__figure--primary case-study__image-block">
-            <img src="../assets/responsive/lamaison/Beforeafterproduct-1200.png" srcset="../assets/responsive/lamaison/Beforeafterproduct-640.png 640w, ../assets/responsive/lamaison/Beforeafterproduct-1200.png 1200w, ../assets/responsive/lamaison/Beforeafterproduct-1800.png 1800w" sizes="(max-width: 960px) calc(100vw - 80px), 900px" alt="Product page before and after redesign" width="1200" height="493" loading="lazy" decoding="async" />
-            <figcaption class="case-study__caption">Product page before / after redesign.</figcaption>
-          </figure>
+      <!-- Overview -->
+      <section
+        class="case-study__section"
+        id="overview"
+        aria-labelledby="heading-overview"
+      >
+        <div class="case-study__content">
+          <h2 class="section-heading" id="heading-overview">Overview</h2>
+          <p class="case-study__metrics">
+            <strong>Scope:</strong> Full responsive e-commerce redesign (14+
+            screens across mobile & desktop)<br />
+            <strong>Deliverables:</strong> UX audit, wireframes, UI system,
+            HTML/CSS prototype
+          </p>
+          <p class="case-study__body">
+            La Maison Patisserie is an independent bakery with an existing
+            online store. This project involved auditing the current website and
+            redesigning the full digital experience to improve clarity,
+            accessibility, and structural consistency.
+          </p>
+          <p class="case-study__body">
+            The redesign translated audit findings into a cohesive design system
+            and scalable front-end implementation across mobile and desktop
+            experiences.
+          </p>
+          <dl class="case-study__meta-list">
+            <dt>Role</dt>
+            <dd>UX/UI Designer and Developer</dd>
+            <dt>Tools</dt>
+            <dd>Figma, HTML/CSS, JavaScript</dd>
+          </dl>
+          <h3 class="case-study__subheading">Impact Focus</h3>
+          <p class="case-study__body">
+            While no formal usability testing was conducted, the redesign
+            prioritised clarity, accessibility, and system consistency to reduce
+            friction in product discovery and checkout progression.
+          </p>
+        </div>
+      </section>
+
+      <!-- The Problem -->
+      <section
+        class="case-study__section case-study__section--alt"
+        id="problem"
+        aria-labelledby="heading-problem"
+      >
+        <div class="case-study__content">
+          <h2 class="section-heading" id="heading-problem">The Problem</h2>
+          <p class="case-study__body">
+            The original website suffered from multiple usability issues that
+            disrupted both readability and purchasing flow.
+          </p>
+          <p class="case-study__body">
+            <strong>Key issues identified:</strong>
+          </p>
+          <ul class="case-study__list">
+            <li>Low-contrast colour combinations reducing readability</li>
+            <li>Inconsistent typography hierarchy</li>
+            <li>Unclear navigation structure</li>
+            <li>Missing functional cart and checkout flow</li>
+            <li>Poor responsiveness across breakpoints</li>
+          </ul>
+          <p class="case-study__body">
+            These issues created cognitive load and reduced confidence during
+            product discovery and purchase.
+          </p>
+        </div>
+      </section>
+
+      <!-- Audit Findings -->
+      <section
+        class="case-study__section"
+        id="audit"
+        aria-labelledby="heading-audit"
+      >
+        <div class="case-study__content">
+          <h2 class="section-heading" id="heading-audit">Audit Findings</h2>
+          <p class="case-study__body">
+            A structured UX and accessibility audit was conducted across mobile
+            and desktop experience to identify the root causes behind these
+            issues.
+          </p>
+          <p class="case-study__body">
+            The audit revealed that problems were not isolated, but systemic.
+          </p>
+          <div class="insight-box">
+            <p>
+              <strong>Primary insight:</strong> The absence of a unified design
+              system created inconsistencies in hierarchy, interaction, and
+              accessibility.
+            </p>
+          </div>
+          <p class="case-study__body"><strong>This resulted in:</strong></p>
+          <ul class="case-study__list">
+            <li>Inconsistent visual structure</li>
+            <li>Unpredictable interaction patterns</li>
+            <li>Reduced clarity across the user journey</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Design Goals -->
+      <section
+        class="case-study__section case-study__section--alt"
+        id="design-goals"
+        aria-labelledby="heading-goals"
+      >
+        <div class="case-study__content">
+          <h2 class="section-heading" id="heading-goals">Design Goals</h2>
+          <p class="case-study__body">
+            Based on the audit, the redesign focused on system-level
+            improvements rather than surface-level styling.
+          </p>
+          <p class="case-study__body"><strong>Core goals:</strong></p>
+          <ul class="case-study__list">
+            <li>Establish a structured typographic and spacing system</li>
+            <li>Improve colour contrast and accessibility compliance</li>
+            <li>Simplify navigation architecture and product discovery</li>
+            <li>Reduce cognitive load in cart and checkout flow</li>
+            <li>Implement a consistent mobile-first responsive framework</li>
+          </ul>
+          <div
+            class="case-study__image-group case-study__image-group--supporting case-study__image-group--wireframe-full"
+          >
+            <figure
+              class="case-study__figure case-study__figure--secondary case-study__image-block case-study__figure--wireframe"
+            >
+              <img
+                src="../assets/responsive/lamaison/Wireframes-1200.png"
+                srcset="
+                  ../assets/responsive/lamaison/Wireframes-640.png   640w,
+                  ../assets/responsive/lamaison/Wireframes-1200.png 1200w,
+                  ../assets/responsive/lamaison/Wireframes-1800.png 1800w
+                "
+                sizes="(max-width: 960px) calc(100vw - 80px), 900px"
+                alt="Wireframe overview of homepage structure"
+                width="1200"
+                height="452"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Low-fidelity wireframes used to define layout structure
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Structural Redesign -->
+      <section
+        class="case-study__section"
+        id="structural-redesign"
+        aria-labelledby="heading-structural"
+      >
+        <div class="case-study__content">
+          <h2 class="section-heading" id="heading-structural">
+            Structural Redesign
+          </h2>
+          <p class="case-study__body">
+            The original site lacked hierarchy and clear product discovery.
+          </p>
+          <p class="case-study__body">
+            <strong>Key structural changes:</strong>
+          </p>
+          <ul class="case-study__list">
+            <li>
+              Refined homepage layout to improve visual hierarchy and reduce
+              clutter
+            </li>
+            <li>
+              Redesigned product listing from a dense image grid to a structured
+              two-column layout
+            </li>
+            <li>
+              Introduced clearer product information (name, description, price)
+              accessible during browsing
+            </li>
+            <li>
+              Made filtering and navigation elements more accessible and visible
+            </li>
+          </ul>
+          <div class="case-study__image-group case-study__image-group--primary">
+            <figure
+              class="case-study__figure case-study__figure--primary case-study__image-block"
+            >
+              <img
+                src="../assets/responsive/lamaison/Beforeafterproduct-1200.png"
+                srcset="
+                  ../assets/responsive/lamaison/Beforeafterproduct-640.png   640w,
+                  ../assets/responsive/lamaison/Beforeafterproduct-1200.png 1200w,
+                  ../assets/responsive/lamaison/Beforeafterproduct-1800.png 1800w
+                "
+                sizes="(max-width: 960px) calc(100vw - 80px), 900px"
+                alt="Product page before and after redesign"
+                width="1200"
+                height="493"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Product page before / after redesign.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interaction Improvements -->
+      <section
+        class="case-study__section case-study__section--alt"
+        id="interaction-flow"
+        aria-labelledby="heading-interaction"
+      >
+        <div class="case-study__content">
+          <h2 class="section-heading" id="heading-interaction">
+            Interaction Improvements
+          </h2>
+          <p class="case-study__body">
+            The redesign focused on reducing ambiguity and improving task
+            clarity.
+          </p>
+          <p class="case-study__body">
+            <strong>Improvements included:</strong>
+          </p>
+          <ul class="case-study__list">
+            <li>Clear cart feedback states</li>
+            <li>Structured multi-step checkout flow</li>
+            <li>Improved form hierarchy and input clarity</li>
+            <li>Stronger call-to-action contrast</li>
+            <li>Consistent button behaviour across screens</li>
+          </ul>
+          <div
+            class="case-study__image-group case-study__image-group--checkout"
+          >
+            <figure
+              class="case-study__figure case-study__figure--secondary case-study__image-block"
+            >
+              <img
+                src="../assets/responsive/lamaison/Cart-1200.png"
+                srcset="
+                  ../assets/responsive/lamaison/Cart-640.png   640w,
+                  ../assets/responsive/lamaison/Cart-1200.png 1200w,
+                  ../assets/responsive/lamaison/Cart-1800.png 1800w
+                "
+                sizes="(max-width: 960px) calc(100vw - 80px), 900px"
+                alt="Checkout flow step: cart"
+                width="1200"
+                height="958"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">Cart</figcaption>
+            </figure>
+            <figure
+              class="case-study__figure case-study__figure--secondary case-study__image-block"
+            >
+              <img
+                src="../assets/responsive/lamaison/payment-1200.png"
+                srcset="
+                  ../assets/responsive/lamaison/payment-640.png   640w,
+                  ../assets/responsive/lamaison/payment-1200.png 1200w,
+                  ../assets/responsive/lamaison/payment-1800.png 1800w
+                "
+                sizes="(max-width: 960px) calc(100vw - 80px), 900px"
+                alt="Checkout flow step: payment"
+                width="1200"
+                height="958"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">Payment</figcaption>
+            </figure>
+            <figure
+              class="case-study__figure case-study__figure--secondary case-study__image-block"
+            >
+              <img
+                src="../assets/responsive/lamaison/confirmation-1200.png"
+                srcset="
+                  ../assets/responsive/lamaison/confirmation-640.png   640w,
+                  ../assets/responsive/lamaison/confirmation-1200.png 1200w,
+                  ../assets/responsive/lamaison/confirmation-1800.png 1800w
+                "
+                sizes="(max-width: 960px) calc(100vw - 80px), 900px"
+                alt="Checkout flow step: confirmation"
+                width="1200"
+                height="958"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">Confirmation</figcaption>
+            </figure>
+          </div>
+          <div class="case-study__image-group case-study__image-group--primary">
+            <figure
+              class="case-study__figure case-study__figure--primary case-study__image-block"
+            >
+              <img
+                src="../assets/responsive/lamaison/Beforeaftercart-1200.png"
+                srcset="
+                  ../assets/responsive/lamaison/Beforeaftercart-640.png   640w,
+                  ../assets/responsive/lamaison/Beforeaftercart-1200.png 1200w,
+                  ../assets/responsive/lamaison/Beforeaftercart-1800.png 1800w
+                "
+                sizes="(max-width: 960px) calc(100vw - 80px), 900px"
+                alt="Cart state before and after redesign"
+                width="1200"
+                height="436"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Cart state before / after.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Design System Development -->
+      <section
+        class="case-study__section"
+        id="design-system"
+        aria-labelledby="heading-design-system"
+      >
+        <div class="case-study__content">
+          <h2 class="section-heading" id="heading-design-system">
+            Design System Development
+          </h2>
+          <p class="case-study__body">
+            The original site lacked consistency across typography and colour
+            usage.
+          </p>
+          <p class="case-study__body">To create cohesion, I defined:</p>
+          <ul class="case-study__list">
+            <li>A structured typographic system</li>
+            <li>
+              Accessible colour palette validated against WCAG contrast
+              standards
+            </li>
+            <li>Consistent spacing system</li>
+            <li>Defined button states and interaction styles</li>
+          </ul>
+          <div
+            class="case-study__image-group case-study__image-group--compact case-study__image-group--design-system"
+          >
+            <figure
+              class="case-study__figure case-study__figure--secondary case-study__figure--typography case-study__image-block"
+            >
+              <img
+                src="../assets/responsive/lamaison/ColourAndType-1200.png"
+                srcset="
+                  ../assets/responsive/lamaison/ColourAndType-640.png   640w,
+                  ../assets/responsive/lamaison/ColourAndType-1200.png 1200w,
+                  ../assets/responsive/lamaison/ColourAndType-1800.png 1800w
+                "
+                sizes="(max-width: 960px) calc(100vw - 80px), 900px"
+                alt="Typography scale and colour palette"
+                width="1200"
+                height="618"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Typography scale graphic.
+              </figcaption>
+            </figure>
+            <figure
+              class="case-study__figure case-study__figure--secondary case-study__figure--buttons case-study__image-block"
+            >
+              <img
+                src="../assets/responsive/lamaison/Buttons2-1200.png"
+                srcset="
+                  ../assets/responsive/lamaison/Buttons2-640.png   640w,
+                  ../assets/responsive/lamaison/Buttons2-1200.png 1200w,
+                  ../assets/responsive/lamaison/Buttons2-1800.png 1800w
+                "
+                sizes="(max-width: 960px) calc(100vw - 80px), 900px"
+                alt="Button component states"
+                width="1200"
+                height="642"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Button component states.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Responsive Implementation -->
+      <section
+        class="case-study__section case-study__section--alt"
+        id="responsive"
+        aria-labelledby="heading-responsive"
+      >
+        <div class="case-study__content">
+          <h2 class="section-heading" id="heading-responsive">
+            Responsive Implementation
+          </h2>
+          <p class="case-study__body">
+            The redesign was developed across mobile and desktop breakpoints.
+          </p>
+          <p class="case-study__body"><strong>Focus areas:</strong></p>
+          <ul class="case-study__list">
+            <li>Mobile-first layout adjustments</li>
+            <li>Touch-friendly interaction zones</li>
+            <li>Optimised content stacking for smaller screens</li>
+          </ul>
+          <div class="case-study__image-group case-study__image-group--primary">
+            <figure
+              class="case-study__figure case-study__figure--primary case-study__image-block"
+            >
+              <img
+                src="../assets/responsive/lamaison/Homedesktopmobile-1200.png"
+                srcset="
+                  ../assets/responsive/lamaison/Homedesktopmobile-640.png   640w,
+                  ../assets/responsive/lamaison/Homedesktopmobile-1200.png 1200w,
+                  ../assets/responsive/lamaison/Homedesktopmobile-1800.png 1800w
+                "
+                sizes="(max-width: 960px) calc(100vw - 80px), 900px"
+                alt="Mobile homepage vs desktop homepage"
+                width="1200"
+                height="920"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Desktop homepage vs mobile homepage.
+              </figcaption>
+            </figure>
+            <figure
+              class="case-study__figure case-study__figure--primary case-study__image-block"
+            >
+              <img
+                src="../assets/responsive/lamaison/Productdesktopmobile-1200.png"
+                srcset="
+                  ../assets/responsive/lamaison/Productdesktopmobile-640.png   640w,
+                  ../assets/responsive/lamaison/Productdesktopmobile-1200.png 1200w,
+                  ../assets/responsive/lamaison/Productdesktopmobile-1800.png 1800w
+                "
+                sizes="(max-width: 960px) calc(100vw - 80px), 900px"
+                alt="Mobile product page vs desktop"
+                width="1200"
+                height="953"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Desktop product page vs mobile product page.
+              </figcaption>
+            </figure>
+            <figure
+              class="case-study__figure case-study__figure--primary case-study__image-block"
+            >
+              <img
+                src="../assets/responsive/lamaison/CartMobile-1200.png"
+                srcset="
+                  ../assets/responsive/lamaison/CartMobile-640.png   640w,
+                  ../assets/responsive/lamaison/CartMobile-1200.png 1200w,
+                  ../assets/responsive/lamaison/CartMobile-1800.png 1800w
+                "
+                sizes="(max-width: 960px) calc(100vw - 80px), 900px"
+                alt="Mobile checkout"
+                width="1200"
+                height="1122"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Mobile checkout.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reflection -->
+      <section
+        class="case-study__section"
+        id="reflection"
+        aria-labelledby="heading-reflection"
+      >
+        <div class="case-study__content">
+          <h2 class="section-heading" id="heading-reflection">Reflection</h2>
+          <p class="case-study__body">
+            This project strengthened my ability to approach redesign through
+            system-level thinking rather than surface-level visual changes.
+          </p>
+          <p class="case-study__body"><strong>Key learnings:</strong></p>
+          <ul class="case-study__list">
+            <li>Diagnosing usability issues at a systems level</li>
+            <li>Translating audit findings into scalable UI frameworks</li>
+            <li>
+              Embedding accessibility decisions throughout the design process
+            </li>
+          </ul>
+          <p class="case-study__body">
+            If extended further, I would conduct usability testing to validate
+            task clarity and measure improvements in checkout progression.
+          </p>
+        </div>
+      </section>
+
+      <!-- View Project -->
+      <section
+        class="case-study__section case-study__section--alt"
+        id="view-project"
+      >
+        <div class="case-study__content">
+          <h2 class="section-heading">View Project</h2>
+          <p class="case-study__body">
+            <a
+              href="https://nuria-16cr.github.io/patisserie-website/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live website</a
+            >
+            ·
+            <a
+              href="https://www.figma.com/proto/FIVGgti1VJ2ibeR31tUjtU/UI-Design-A2---Desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Desktop prototype</a
+            >
+            ·
+            <a
+              href="https://www.figma.com/proto/YftiPE1bHHbdb94qz0flRC/UI-Design-A2---Mobile"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Mobile prototype</a
+            >
+            ·
+            <a
+              href="https://github.com/Nuria-16cr/patisserie-website"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub repository</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- Back to work -->
+      <nav
+        class="case-study__section case-study__nav"
+        aria-label="Case study navigation"
+      >
+        <div class="case-study__content">
+          <a href="../index.html#work" class="case-study__back"
+            >← Back to work</a
+          >
+        </div>
+      </nav>
+    </main>
+
+    <footer class="footer-creative">
+      <div class="container">
+        <div class="footer-content-creative">
+          <p>&copy; <span id="year"></span> Nuria Carbonell Rivela</p>
+          <p>Built with HTML, CSS & JavaScript</p>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- Interaction Improvements -->
-    <section class="case-study__section case-study__section--alt" id="interaction-flow" aria-labelledby="heading-interaction">
-      <div class="case-study__content">
-        <h2 class="section-heading" id="heading-interaction">Interaction Improvements</h2>
-        <p class="case-study__body">The redesign focused on reducing ambiguity and improving task clarity.</p>
-        <p class="case-study__body"><strong>Improvements included:</strong></p>
-        <ul class="case-study__list">
-          <li>Clear cart feedback states</li>
-          <li>Structured multi-step checkout flow</li>
-          <li>Improved form hierarchy and input clarity</li>
-          <li>Stronger call-to-action contrast</li>
-          <li>Consistent button behaviour across screens</li>
-          <li>Standardised feedback patterns across interactive elements</li>
-        </ul>
-        <div class="case-study__image-group case-study__image-group--checkout">
-          <figure class="case-study__figure case-study__figure--secondary case-study__image-block">
-            <img src="../assets/responsive/lamaison/Cart-1200.png" srcset="../assets/responsive/lamaison/Cart-640.png 640w, ../assets/responsive/lamaison/Cart-1200.png 1200w, ../assets/responsive/lamaison/Cart-1800.png 1800w" sizes="(max-width: 960px) calc(100vw - 80px), 900px" alt="Checkout flow step: cart" width="1200" height="958" loading="lazy" decoding="async" />
-            <figcaption class="case-study__caption">Cart</figcaption>
-          </figure>
-          <figure class="case-study__figure case-study__figure--secondary case-study__image-block">
-            <img src="../assets/responsive/lamaison/payment-1200.png" srcset="../assets/responsive/lamaison/payment-640.png 640w, ../assets/responsive/lamaison/payment-1200.png 1200w, ../assets/responsive/lamaison/payment-1800.png 1800w" sizes="(max-width: 960px) calc(100vw - 80px), 900px" alt="Checkout flow step: payment" width="1200" height="958" loading="lazy" decoding="async" />
-            <figcaption class="case-study__caption">Payment</figcaption>
-          </figure>
-          <figure class="case-study__figure case-study__figure--secondary case-study__image-block">
-            <img src="../assets/responsive/lamaison/confirmation-1200.png" srcset="../assets/responsive/lamaison/confirmation-640.png 640w, ../assets/responsive/lamaison/confirmation-1200.png 1200w, ../assets/responsive/lamaison/confirmation-1800.png 1800w" sizes="(max-width: 960px) calc(100vw - 80px), 900px" alt="Checkout flow step: confirmation" width="1200" height="958" loading="lazy" decoding="async" />
-            <figcaption class="case-study__caption">Confirmation</figcaption>
-          </figure>
-        </div>
-        <div class="case-study__image-group case-study__image-group--primary">
-          <figure class="case-study__figure case-study__figure--primary case-study__image-block">
-            <img src="../assets/responsive/lamaison/Beforeaftercart-1200.png" srcset="../assets/responsive/lamaison/Beforeaftercart-640.png 640w, ../assets/responsive/lamaison/Beforeaftercart-1200.png 1200w, ../assets/responsive/lamaison/Beforeaftercart-1800.png 1800w" sizes="(max-width: 960px) calc(100vw - 80px), 900px" alt="Cart state before and after redesign" width="1200" height="436" loading="lazy" decoding="async" />
-            <figcaption class="case-study__caption">Cart state before / after.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- Design System Development -->
-    <section class="case-study__section" id="design-system" aria-labelledby="heading-design-system">
-      <div class="case-study__content">
-        <h2 class="section-heading" id="heading-design-system">Design System Development</h2>
-        <p class="case-study__body">The original site lacked consistency across typography and colour usage.</p>
-        <p class="case-study__body">To create cohesion, I defined:</p>
-        <ul class="case-study__list">
-          <li>A structured typographic scale</li>
-          <li>Accessible colour palette validated against WCAG contrast standards</li>
-          <li>Consistent spacing system</li>
-          <li>Defined button states and interaction styles</li>
-        </ul>
-        <div class="case-study__image-group case-study__image-group--compact case-study__image-group--design-system">
-          <figure class="case-study__figure case-study__figure--secondary case-study__figure--typography case-study__image-block">
-            <img src="../assets/responsive/lamaison/ColourAndType-1200.png" srcset="../assets/responsive/lamaison/ColourAndType-640.png 640w, ../assets/responsive/lamaison/ColourAndType-1200.png 1200w, ../assets/responsive/lamaison/ColourAndType-1800.png 1800w" sizes="(max-width: 960px) calc(100vw - 80px), 900px" alt="Typography scale and colour palette" width="1200" height="618" loading="lazy" decoding="async" />
-            <figcaption class="case-study__caption">Typography scale graphic.</figcaption>
-          </figure>
-          <figure class="case-study__figure case-study__figure--secondary case-study__figure--buttons case-study__image-block">
-            <img src="../assets/responsive/lamaison/Buttons2-1200.png" srcset="../assets/responsive/lamaison/Buttons2-640.png 640w, ../assets/responsive/lamaison/Buttons2-1200.png 1200w, ../assets/responsive/lamaison/Buttons2-1800.png 1800w" sizes="(max-width: 960px) calc(100vw - 80px), 900px" alt="Button component states" width="1200" height="642" loading="lazy" decoding="async" />
-            <figcaption class="case-study__caption">Button component states.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- Responsive Implementation -->
-    <section class="case-study__section case-study__section--alt" id="responsive" aria-labelledby="heading-responsive">
-      <div class="case-study__content">
-        <h2 class="section-heading" id="heading-responsive">Responsive Implementation</h2>
-        <p class="case-study__body">The redesign was developed across mobile and desktop breakpoints.</p>
-        <p class="case-study__body"><strong>Focus areas:</strong></p>
-        <ul class="case-study__list">
-          <li>Mobile-first layout adjustments</li>
-          <li>Scalable grid structure</li>
-          <li>Touch-friendly interaction zones</li>
-          <li>Optimised content stacking for smaller screens</li>
-        </ul>
-        <div class="case-study__image-group case-study__image-group--primary">
-          <figure class="case-study__figure case-study__figure--primary case-study__image-block">
-            <img src="../assets/responsive/lamaison/Homedesktopmobile-1200.png" srcset="../assets/responsive/lamaison/Homedesktopmobile-640.png 640w, ../assets/responsive/lamaison/Homedesktopmobile-1200.png 1200w, ../assets/responsive/lamaison/Homedesktopmobile-1800.png 1800w" sizes="(max-width: 960px) calc(100vw - 80px), 900px" alt="Mobile homepage vs desktop homepage" width="1200" height="920" loading="lazy" decoding="async" />
-            <figcaption class="case-study__caption">Mobile homepage vs desktop homepage.</figcaption>
-          </figure>
-          <figure class="case-study__figure case-study__figure--primary case-study__image-block">
-            <img src="../assets/responsive/lamaison/Productdesktopmobile-1200.png" srcset="../assets/responsive/lamaison/Productdesktopmobile-640.png 640w, ../assets/responsive/lamaison/Productdesktopmobile-1200.png 1200w, ../assets/responsive/lamaison/Productdesktopmobile-1800.png 1800w" sizes="(max-width: 960px) calc(100vw - 80px), 900px" alt="Mobile product page vs desktop" width="1200" height="953" loading="lazy" decoding="async" />
-            <figcaption class="case-study__caption">Mobile product page vs desktop.</figcaption>
-          </figure>
-          <figure class="case-study__figure case-study__figure--primary case-study__image-block">
-            <img src="../assets/responsive/lamaison/CartMobile-1200.png" srcset="../assets/responsive/lamaison/CartMobile-640.png 640w, ../assets/responsive/lamaison/CartMobile-1200.png 1200w, ../assets/responsive/lamaison/CartMobile-1800.png 1800w" sizes="(max-width: 960px) calc(100vw - 80px), 900px" alt="Mobile checkout" width="1200" height="1122" loading="lazy" decoding="async" />
-            <figcaption class="case-study__caption">Mobile checkout.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reflection -->
-    <section class="case-study__section" id="reflection" aria-labelledby="heading-reflection">
-      <div class="case-study__content">
-        <h2 class="section-heading" id="heading-reflection">Reflection</h2>
-        <p class="case-study__body">This project strengthened my ability to approach redesign through system-level thinking rather than surface-level visual changes.</p>
-        <p class="case-study__body"><strong>Key learnings:</strong></p>
-        <ul class="case-study__list">
-          <li>Diagnosing usability issues at a systems level</li>
-          <li>Translating audit findings into scalable UI frameworks</li>
-          <li>Embedding accessibility decisions throughout the design process</li>
-          <li>Balancing brand identity with functional clarity</li>
-        </ul>
-        <p class="case-study__body">If extended further, I would conduct usability testing to validate task clarity and measure improvements in checkout progression.</p>
-      </div>
-    </section>
-
-    <!-- View Project -->
-    <section class="case-study__section case-study__section--alt" id="view-project">
-      <div class="case-study__content">
-        <h2 class="section-heading">View Project</h2>
-        <p class="case-study__body">
-          <a href="https://nuria-16cr.github.io/patisserie-website/" target="_blank" rel="noopener noreferrer">Live website</a> ·
-          <a href="https://www.figma.com/proto/FIVGgti1VJ2ibeR31tUjtU/UI-Design-A2---Desktop" target="_blank" rel="noopener noreferrer">Desktop prototype</a> ·
-          <a href="https://www.figma.com/proto/YftiPE1bHHbdb94qz0flRC/UI-Design-A2---Mobile" target="_blank" rel="noopener noreferrer">Mobile prototype</a> ·
-          <a href="https://github.com/Nuria-16cr/patisserie-website" target="_blank" rel="noopener noreferrer">GitHub repository</a>
-        </p>
-      </div>
-    </section>
-
-    <!-- Back to work -->
-    <nav class="case-study__section case-study__nav" aria-label="Case study navigation">
-      <div class="case-study__content">
-        <a href="../index.html#work" class="case-study__back">← Back to work</a>
-      </div>
-    </nav>
-  </main>
-
-  <footer class="footer-creative">
-    <div class="container">
-      <div class="footer-content-creative">
-        <p>&copy; <span id="year"></span> Nuria Carbonell Rivela</p>
-        <p>Built with HTML, CSS & JavaScript</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="../js/main.js"></script>
-</body>
+    <script src="../js/main.js"></script>
+  </body>
 </html>

@@ -250,6 +250,20 @@
   margin-bottom: var(--spacing-sm);
 }
 
+/* Gap between images/figures and lists (dot points) */
+.case-study__image-block + .case-study__list,
+.case-study__figure + .case-study__list,
+.case-study__image-block + ul,
+.scripted-concept-grid + .case-study__list {
+  margin-top: 1.5rem;
+}
+
+.case-study__list + .case-study__image-block,
+.case-study__list + .case-study__figure,
+.case-study__list + .scripted-concept-grid {
+  margin-top: 1.5rem;
+}
+
 /* Insight box — matches main page tone */
 .insight-box {
   padding: var(--spacing-md);
