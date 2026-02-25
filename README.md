@@ -2,7 +2,7 @@
 
 ## Project structure
 
-├── index.html # Homepage (Hero, Statement, Work, About, Stack, Experience, Contact)
+├── index.html # Homepage (Hero, Statement, Work, About, Skills, Experience, Contact)
 ├── projects/
 │ └── scripted.html # Scripted case study
 ├── css/
