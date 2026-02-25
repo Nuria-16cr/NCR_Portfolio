@@ -37,7 +37,7 @@
       </div>
     </header>
 
-    <main class="case-study">
+    <main class="case-study" id="scripted-case-study">
       <!-- Hero -->
       <header class="case-study__hero">
         <div class="case-study__content">
@@ -76,14 +76,16 @@
 
       <!-- Overview -->
       <section class="case-study__section">
-        <div class="container container-narrow">
+        <div class="case-study__content">
           <h2 class="section-heading">Overview</h2>
           <p class="case-study__body">
             Scripted is a mobile app designed to support intermediate language
             learners in developing conversational fluency through real-time
             conversations and personalised feedback.
           </p>
-          <h3 class="case-study__subheading">My role</h3>
+          <h3 class="case-study__subheading case-study__subheading--minor">
+            My role
+          </h3>
           <ul class="case-study__list">
             <li>
               Led design of the recording experience and interaction flow (solo,
@@ -107,7 +109,7 @@
 
       <!-- The Problem -->
       <section class="case-study__section case-study__section--alt">
-        <div class="container container-narrow">
+        <div class="case-study__content">
           <h2 class="section-heading">The Problem</h2>
           <p class="case-study__body">
             Intermediate language learners often plateau: they understand
@@ -134,7 +136,7 @@
 
       <!-- Product Strategy -->
       <section class="case-study__section">
-        <div class="container container-narrow">
+        <div class="case-study__content">
           <h2 class="section-heading">Product Strategy</h2>
           <p class="case-study__body">
             Scripted is an app designed as an accessory to conversational
@@ -163,7 +165,7 @@
 
       <!-- Concept Evolution -->
       <section class="case-study__section">
-        <div class="container container-narrow">
+        <div class="case-study__content">
           <h2 class="section-heading">Concept Evolution</h2>
           <p class="case-study__body">
             We explored four distinct directions to propose a solution to our
@@ -265,8 +267,11 @@
       </section>
 
       <!-- Core Experience -->
-      <section class="case-study__section case-study__section--alt">
-        <div class="container container-narrow">
+      <section
+        class="case-study__section case-study__section--alt"
+        id="core-experience"
+      >
+        <div class="case-study__content">
           <h2 class="section-heading">Core Experience</h2>
           <h3 class="case-study__subheading">Recording a Conversation</h3>
           <p class="case-study__body">
@@ -275,75 +280,82 @@
             without interrupting conversational flow.
           </p>
           <p class="case-study__body">The challenge was balancing:</p>
-          <ul class="case-study__list">
-            <li>providing timely support</li>
-            <li>without increasing cognitive load or screen dependency</li>
+          <ul class="case-study__list case-study__list--tight">
+            <li>Providing timely support</li>
+            <li>Without increasing cognitive load or screen dependency</li>
           </ul>
           <h3 class="case-study__subheading">Flow</h3>
-          <p class="case-study__body">
-            <strong>Start</strong><br />Users either:
-          </p>
-          <ul class="case-study__list">
-            <li>record a real conversation</li>
-            <li>or practice with an AI chatbot</li>
-          </ul>
-          <p class="case-study__body">
-            During recording, the system automatically detects speakers (solo,
-            pair, or group) and assigns visual indicators in the transcript.
-          </p>
-          <p class="case-study__body">
-            Colour differentiation between speakers was used as a primary visual
-            cue; future iterations would further improve accessibility by
-            strengthening contrast and adding non-colour indicators.
-          </p>
-          <p class="case-study__body">
-            <strong>Record</strong><br />The interface is intentionally minimal:
-          </p>
-          <ul class="case-study__list">
-            <li>waveform</li>
-            <li>timer</li>
-            <li>primary controls</li>
-          </ul>
-          <p class="case-study__body">
-            Users are not required to interact with the screen, allowing full
-            focus on conversation.
-          </p>
-          <p class="case-study__body">
-            <strong>Contextual Support (Triggered)</strong>
-          </p>
-          <p class="case-study__body">
-            Support appears only when explicitly prompted:
-          </p>
-          <p class="case-study__body">“How do you say…?”</p>
-          <p class="case-study__body">
-            This triggers a lightweight suggestion overlay that:
-          </p>
-          <ul class="case-study__list">
-            <li>provides vocabulary support</li>
-            <li>does not interrupt the flow of conversation</li>
-            <li>avoids persistent UI clutter</li>
-          </ul>
-          <p class="case-study__body">
-            This interaction was refined through testing to reduce
-            intrusiveness.
-          </p>
-          <p class="case-study__body">
-            <strong>Summary-first Feedback</strong><br />After recording, users
-            land on a structured summary:
-          </p>
-          <ul class="case-study__list">
-            <li>conversation context</li>
-            <li>key metadata (duration, participants)</li>
-            <li>quick indicators (e.g. weaknesses, vocabulary)</li>
-          </ul>
-          <p class="case-study__body">
-            Users can then choose to explore detailed transcript analysis.
-          </p>
-          <p class="case-study__body">
-            During testing, users expected the weaknesses and glossary words to
-            be clickable. This revealed an opportunity to evolve the feature
-            into an interactive summary in future iterations.
-          </p>
+          <div class="case-study__flow-step">
+            <h4 class="case-study__step-heading">Start</h4>
+            <p class="case-study__body">Users either:</p>
+            <ul class="case-study__list case-study__list--tight">
+              <li>Record a real conversation</li>
+              <li>Or practice with an AI chatbot</li>
+            </ul>
+            <p class="case-study__body">
+              During recording, the system automatically detects speakers
+              (solo, pair, or group) and assigns visual indicators in the
+              transcript.
+            </p>
+            <p class="case-study__body">
+              Colour differentiation between speakers was used as a primary
+              visual cue; future iterations would further improve accessibility
+              by strengthening contrast and adding non-colour indicators.
+            </p>
+          </div>
+          <div class="case-study__flow-step">
+            <h4 class="case-study__step-heading">Record</h4>
+            <p class="case-study__body">
+              The interface is intentionally minimal:
+            </p>
+            <ul class="case-study__list case-study__list--tight">
+              <li>Waveform</li>
+              <li>Timer</li>
+              <li>Primary controls</li>
+            </ul>
+            <p class="case-study__body">
+              Users are not required to interact with the screen, allowing full
+              focus on conversation.
+            </p>
+          </div>
+          <div class="case-study__flow-step">
+            <h4 class="case-study__step-heading">Contextual Support (Triggered)</h4>
+            <p class="case-study__body">
+              Support appears only when explicitly prompted:
+            </p>
+            <p class="case-study__body">“How do you say…?”</p>
+            <p class="case-study__body">
+              This triggers a lightweight suggestion overlay that:
+            </p>
+            <ul class="case-study__list case-study__list--tight">
+              <li>Provides vocabulary support</li>
+              <li>Does not interrupt the flow of conversation</li>
+              <li>Avoids persistent UI clutter</li>
+            </ul>
+            <p class="case-study__body">
+              This interaction was refined through testing to reduce
+              intrusiveness.
+            </p>
+          </div>
+          <div class="case-study__flow-step">
+            <h4 class="case-study__step-heading">Summary-first Feedback</h4>
+            <p class="case-study__body">
+              After recording, users land on a structured summary:
+            </p>
+            <ul class="case-study__list case-study__list--tight">
+              <li>Conversation context</li>
+              <li>Key metadata (duration, participants)</li>
+              <li>Quick indicators (e.g. weaknesses, vocabulary)</li>
+            </ul>
+            <p class="case-study__body">
+              Users can then choose to explore detailed transcript analysis.
+            </p>
+            <p class="case-study__body">
+              During testing, users expected the weaknesses and glossary words
+              to be clickable. This revealed an opportunity to evolve the
+              feature into an interactive summary in future iterations.
+            </p>
+          </div>
           <div class="scripted-mobile-grid">
             <div class="case-study__image-block scripted-mobile-card">
               <img
@@ -409,7 +421,7 @@
             </div>
           </div>
           <p class="case-study__body">
-            Earlier versions displayed the prompt centrally; this was
+            Earlier versions displayed the prompt as a central popup, this was
             repositioned to a less intrusive area following usability feedback.
           </p>
           <h3 class="case-study__subheading">Key Design Decisions</h3>
@@ -440,7 +452,7 @@
 
       <!-- Usability Testing and Iteration -->
       <section class="case-study__section">
-        <div class="container container-narrow">
+        <div class="case-study__content">
           <h2 class="section-heading">Usability Testing & Iteration</h2>
           <p class="case-study__body">
             We conducted usability testing on the high-fidelity prototype to
@@ -453,7 +465,7 @@
           <p class="case-study__body case-study__body--tight">
             <strong>Method:</strong> Think-aloud protocol, task-based testing
           </p>
-          <p class="case-study__body case-study__body--tight">
+          <p class="case-study__body case-study__body--tight case-study__body--meta-end">
             <strong>Tasks:</strong> Record a conversation, review feedback,
             complete a lesson
           </p>
@@ -631,7 +643,7 @@
 
       <!-- My Independent Extension -->
       <section class="case-study__section">
-        <div class="container container-narrow">
+        <div class="case-study__content">
           <h2 class="section-heading">
             Enhancing Engagement Through Achievement Design
           </h2>
@@ -650,44 +662,54 @@
             <li>Goal-based progress tracking</li>
           </ul>
           <h3 class="case-study__subheading">Key Features</h3>
-          <p class="case-study__body"><strong>1. Achievement Cards</strong></p>
-          <p class="case-study__body">
-            Highlight small wins after each conversation
-          </p>
-          <p class="case-study__body">
-            Example: “You spoke for 20 minutes that's your longest conversation
-            yet”
-          </p>
-          <p class="case-study__body">
-            Reinforces progress rather than mistakes
-          </p>
-          <p class="case-study__body"><strong>2. Goal Setting</strong></p>
-          <p class="case-study__body">
-            Users define goals before conversations
-          </p>
-          <p class="case-study__body">Progress is visible and trackable</p>
-          <p class="case-study__body">Encourages intentional practice</p>
-          <p class="case-study__body"><strong>3. Milestones</strong></p>
-          <p class="case-study__body">
-            Tracks consistency and long-term progress
-          </p>
-          <p class="case-study__body">
-            Example: “5 conversations completed this week”
-          </p>
-          <p class="case-study__body">Builds habit formation</p>
-          <p class="case-study__body"><strong>4. Progress Framing</strong></p>
-          <p class="case-study__body">
-            Shifts feedback tone from corrective → encouraging
-          </p>
-          <p class="case-study__body">Makes improvement visible over time</p>
+          <div class="case-study__flow-step">
+            <h4 class="case-study__step-heading">1. Achievement Cards</h4>
+            <p class="case-study__body">
+              Highlight small wins after each conversation
+            </p>
+            <p class="case-study__body">
+              Example: “You spoke for 20 minutes that's your longest
+              conversation yet”
+            </p>
+            <p class="case-study__body">
+              Reinforces progress rather than mistakes
+            </p>
+          </div>
+          <div class="case-study__flow-step">
+            <h4 class="case-study__step-heading">2. Goal Setting</h4>
+            <p class="case-study__body">
+              Users define goals to achieve during conversations
+            </p>
+            <p class="case-study__body">Progress is visible and trackable</p>
+            <p class="case-study__body">Encourages intentional practice</p>
+          </div>
+          <div class="case-study__flow-step">
+            <h4 class="case-study__step-heading">3. Milestones</h4>
+            <p class="case-study__body">
+              Tracks consistency and long-term progress
+            </p>
+            <p class="case-study__body">
+              Example: “5 conversations completed this week”
+            </p>
+            <p class="case-study__body">Builds habit formation</p>
+          </div>
+          <div class="case-study__flow-step">
+            <h4 class="case-study__step-heading">4. Progress Framing</h4>
+            <p class="case-study__body">
+              Shifts feedback tone from corrective → encouraging
+            </p>
+            <p class="case-study__body">
+              Makes improvement visible on the interface
+            </p>
+          </div>
           <h3 class="case-study__subheading">Design Rationale</h3>
           <p class="case-study__body">
             This approach applies principles of behavioural design:
           </p>
           <ul class="case-study__list">
-            <li>positive reinforcement increases repeat behaviour</li>
-            <li>visible progress supports motivation</li>
-            <li>small wins reduce perceived effort over time</li>
+            <li>Positive reinforcement increases repeat behaviour</li>
+            <li>Visible progress supports motivation</li>
+            <li>Small wins reduce perceived effort over time</li>
           </ul>
           <p class="case-study__body">
             The system reframes language learning as continuous progress, not
@@ -766,7 +788,7 @@
 
       <!-- Reflection -->
       <section class="case-study__section">
-        <div class="container container-narrow">
+        <div class="case-study__content">
           <h2 class="section-heading">Reflection</h2>
           <ul class="case-study__takeaways">
             <li>
@@ -784,12 +806,10 @@
               and scannability.
             </li>
             <li>
-              <strong
-                >Leading a core interaction flow clarified my strength in
-                interaction design</strong
-              >
-              — Owning the recording experience reinforced my focus on reducing
-              cognitive load and supporting flow.
+              <strong>Low-interruption interaction design </strong>
+              — Designing the recording flow required minimizing on-screen
+              interaction, enabling users to stay focused on conversation
+              without disruption.
             </li>
           </ul>
         </div>
@@ -797,7 +817,7 @@
 
       <!-- Back to work -->
       <section class="case-study__section case-study__nav">
-        <div class="container container-narrow">
+        <div class="case-study__content">
           <a href="../index.html#work" class="case-study__back"
             >← Back to work</a
           >

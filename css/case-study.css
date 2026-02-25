@@ -107,8 +107,18 @@
   max-width: 65ch;
 }
 
+.case-study__body strong,
+.case-study__list strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
 .case-study__body--tight {
   margin-bottom: 6px;
+}
+
+.case-study__body--meta-end {
+  margin-bottom: var(--spacing-xl);
 }
 
 .case-study__subheading {
@@ -124,10 +134,51 @@
   font-weight: 600;
 }
 
+.case-study__step-heading {
+  margin: 0 0 var(--spacing-xs);
+  font-size: clamp(1rem, 1.5vw, 1.08rem);
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.005em;
+}
+
+.case-study__flow-step {
+  margin-bottom: var(--spacing-lg);
+}
+
+.case-study__flow-step:last-of-type {
+  margin-bottom: 0;
+}
+
+.case-study__flow-step .case-study__body {
+  margin-bottom: var(--spacing-sm);
+}
+
+.case-study__flow-step .case-study__list {
+  margin-bottom: var(--spacing-md);
+}
+
+#core-experience .case-study__subheading {
+  margin-top: var(--spacing-xl);
+}
+
+#core-experience .case-study__subheading:first-of-type {
+  margin-top: 0;
+}
+
+#core-experience .scripted-mobile-grid,
+#core-experience .scripted-before-after-grid {
+  margin-top: var(--spacing-lg);
+}
+
 .case-study__findings {
   margin: 0 0 var(--spacing-lg);
   padding-left: 1.25rem;
   color: var(--text-secondary);
+}
+
+.case-study__subheading + .case-study__findings {
+  margin-top: var(--spacing-lg);
 }
 
 .case-study__finding {
@@ -173,18 +224,18 @@
 
 /* Meta list (Role, Scope, Tools) */
 .case-study__meta-list {
-  margin: var(--spacing-lg) 0 0;
+  margin: 0 0 var(--spacing-md);
   padding: 0;
   max-width: 65ch;
 }
 
 .case-study__meta-list dt {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-base);
   font-weight: 600;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin: var(--spacing-md) 0 var(--spacing-xs);
+  color: var(--text-primary);
+  text-transform: none;
+  letter-spacing: 0;
+  margin: 0 0 2px;
 }
 
 .case-study__meta-list dt:first-child {
@@ -192,10 +243,10 @@
 }
 
 .case-study__meta-list dd {
-  margin: 0;
+  margin: 0 0 var(--spacing-md);
   font-size: var(--font-size-base);
-  color: var(--text-primary);
-  line-height: 1.5;
+  color: var(--text-secondary);
+  line-height: 1.65;
 }
 
 .case-study__label {
@@ -459,6 +510,14 @@
 
 .case-study__caption:last-child {
   margin-bottom: 0;
+}
+
+#scripted-case-study .case-study__caption {
+  text-align: center;
+}
+
+#scripted-case-study .case-study__figure--hero .case-study__caption {
+  text-align: left;
 }
 
 .scripted-mobile-grid {
