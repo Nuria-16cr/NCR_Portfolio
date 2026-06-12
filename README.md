@@ -4,14 +4,14 @@
 
 ├── index.html # Homepage (Hero, Statement, Work, About, Skills, Experience, Contact)
 ├── projects/
-│ └── scripted.html # Scripted case study
+│ └── scripted.html 
 ├── css/
-│ ├── styles.css # Main styles (editorial, 28k-inspired)
-│ └── case-study.css # Case study page only
+│ ├── styles.css 
+│ └── case-study.css 
 ├── js/
-│ └── main.js # Smooth scroll, active nav, scroll animations, mobile menu
+│ └── main.js 
 ├── assets/
-│ └── resume.pdf # Resume
+│ └── resume.pdf 
 └── README.md
 
 ---
